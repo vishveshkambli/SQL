@@ -1,0 +1,7 @@
+What is SQL?
+    SQL is a domain specific programing langauage used in programing, designing and managing
+    data held in relational databases.
+
+    What is a domain specific language?
+    Domain specific languages have a higher level of abstraction and optimization for 
+    specific class of problems.

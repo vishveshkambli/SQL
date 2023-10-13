@@ -1,0 +1,18 @@
+How to download xampp?
+    - Go to Google Chrome / Browser of your choice
+    - Search xampp and press enter
+    - download for your specific operating system (windows,mac)
+    - On windows it will appear in C drive & on mac in the downloads folder
+    - open the xampp folder and install the .exe file
+    - once installed run the Apache & mysql server
+
+    - mac specific steps
+    - open terminal
+    - open the source file on terminal using the next command  
+    - /applications/xampp/xamppfiles/bin/mysql -u root -p 
+    - press enter
+    - It will ask for password, if you do have a password -> enter it and then press enter
+    - If you don't, Just press enter 
+    - Now you will get a prompt saying Eg: Welcome to the MariaDB monitor
+    - Below that you would see the section where you can input your querys. Eg: MariaDB [(none)]> 
+    - Here [(none)] states that you are not in any database right now.

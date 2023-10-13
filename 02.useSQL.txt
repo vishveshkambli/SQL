@@ -1,0 +1,4 @@
+What do we use SQL?
+    SQL let's you access and manipulate database. It became a standard of the american 
+    national standards institude (ANSI) in 1986, and of the international organisation 
+    for standardization (ISO) in 1987.

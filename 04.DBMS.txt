@@ -1,0 +1,4 @@
+What is DBMS?
+    DBMS stands for database management system. 
+    It is used to store data in terms of columns and rows.
+    It helps in storing the data into an organised order

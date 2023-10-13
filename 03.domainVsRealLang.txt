@@ -1,0 +1,5 @@
+What is the difference between domain specific & real programming language?
+    Domain specific langauages usually are less complex then general purpose
+    programing language, such as Java, C or Ruby. They are intended to be used
+    not just by progrmmers but also by non-programmers who are fluent in the domain
+    which the domain specific language addresses.
