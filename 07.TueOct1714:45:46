@@ -109,7 +109,7 @@ MySQL is developed, distributed, and supported by Oracle Corporation
 MySQL is named after co-founder Monty Widenius's daughter: My
 
 
-Who uses mysql?
+Who uses MySQL?
 Huge websites like Facebook, Twitter, Airbnb, Booking.com, Uber, GitHub, YouTube, etc.
 Content Management Systems like WordPress, Drupal, Joomla!, Contao, etc.
 A very large number of web developers around the world
@@ -124,7 +124,7 @@ What is RDBMS?
 RDBMS stands for Relational Database Management System.
 RDBMS is a program used to maintain a relational database.
 RDBMS is the basis for all modern database systems such as MySQL, Microsoft SQL Server, Oracle, and Microsoft Access.
-RDBMS uses wosql access the data in the database.
+RDBMS uses MySQL to access the data in the database.
 
 What is a database table?
 A table consists of columns and rows
@@ -154,7 +154,7 @@ CustomerID	CustomerName 	ContactName	Address	City	Postal Code	Country
 4	Around the Horn	Thomas Hardy	120 Hanover Sq.	London	WA1 1DP	UK
 5	Berglunds snabbköp	Christina Berglund	Berguvsvägen 8	Luleå	S-958 22	Sweden
 
-Order Table : The relationship between the "Customers" table and the "Orders" table is the CustomerID column:
+Order Table: The relationship between the "Customers" table and the "Orders" table is the CustomerID column:
 OrderID	CustomerID	EmployeeID	OrderDate	ShipperID
 10278	5	8	1996-08-12	2
 10280	5	2	1996-08-14	1
@@ -164,7 +164,7 @@ OrderID	CustomerID	EmployeeID	OrderDate	ShipperID
 10383	4	8	1996-12-16	3
 10384	5	3	1996-12-16	3
 
-Shippers Table : The relationship between the "Orders" table and the "Shippers" table is the ShipperID column:
+Shippers Table: The relationship between the "Orders" table and the "Shippers" table is the ShipperID column:
 ShipperID	ShipperName	Phone
 1	Speedy Express	(503) 555-9831
 2	United Package	(503) 555-3199
@@ -177,7 +177,7 @@ SQL is used to insert, search, update, and delete database records.
 How to use SQL?
 
 #1.
-Checking the no of  database:
+Checking the no of  the database:
 MariaDB [(none)]> show databases;
 +--------------------+
 | Database           |
@@ -234,7 +234,28 @@ MariaDB [business]> desc customertable;
 
 7 rows in set (0.017 sec)
 
-#
+#6
+Inserting values in a single column in  CustomerTable:
+
+MariaDB [business]> insert into CustomerTable (CustomerID) Values (1),(2),(3),(4),(5);
+Query OK, 5 rows affected (0.009 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+MariaDB [business]> select * from customertable;
++------------+--------------+-------------+---------+------+------------+---------+
+| CustomerID | CustomerName | ContactName | address | city | PostalCode | Country |
++------------+--------------+-------------+---------+------+------------+---------+
+|          1 | NULL         | NULL        | NULL    | NULL | NULL       | NULL    |
+|          2 | NULL         | NULL        | NULL    | NULL | NULL       | NULL    |
+|          3 | NULL         | NULL        | NULL    | NULL | NULL       | NULL    |
+|          4 | NULL         | NULL        | NULL    | NULL | NULL       | NULL    |
+|          5 | NULL         | NULL        | NULL    | NULL | NULL       | NULL    |
++------------+--------------+-------------+---------+------+------------+---------+
+6 rows in set (0.001 sec)
+
+
+
+
  
 
 
