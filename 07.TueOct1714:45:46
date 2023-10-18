@@ -253,6 +253,24 @@ MariaDB [business]> select * from customertable;
 +------------+--------------+-------------+---------+------+------------+---------+
 6 rows in set (0.001 sec)
 
+#7
+MariaDB [business]> update customertable set customerName='Aloo',contactname='bhujyaa',address='ladooniwas',city='dholakpur',postalcode='10001',country='TunTunPur' where customerid=1;
+Query OK, 1 row affected (0.039 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [business]> select * from customertable;
++------------+--------------+-------------+------------+-----------+------------+----------+
+| CustomerID | CustomerName | ContactName | address    | city      | PostalCode | Country  |
++------------+--------------+-------------+------------+-----------+------------+----------+
+|          1 | Aloo         | bhujyaa     | ladoniwas  | dholakpur | 10001      | TunTunPur|
+|          2 | NULL         | NULL        | NULL       | NULL      | NULL       | NULL     |
+|          3 | NULL         | NULL        | NULL       | NULL      | NULL       | NULL     |
+|          4 | NULL         | NULL        | NULL       | NULL      | NULL       | NULL     |
+|          5 | NULL         | NULL        | NULL       | NULL      | NULL       | NULL     |
++------------+--------------+-------------+------------+-----------+------------+----------+
+5 rows in set (0.001 sec)
+
+
 
 
 
