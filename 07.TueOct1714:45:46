@@ -1,0 +1,285 @@
+Last login: Tue Oct 17 14:45:46 on ttys000
+vishvesh@Macbook-Air-2 ~ % /applications/xampp/xamppfiles/bin/mysql -u root -p
+Enter password: 
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 9
+Server version: 10.4.21-MariaDB Source distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| CRM                |
+| Paper2             |
+| appoinments_db     |
+| college            |
+| company            |
+| crm_system         |
+| demo               |
+| dj7to9orm          |
+| dj7to9ormn         |
+| information_schema |
+| mysql              |
+| orm2               |
+| paper1             |
+| performance_schema |
+| phpmyadmin         |
+| vishbank           |
++--------------------+
+16 rows in set (0.010 sec)
+
+MariaDB [(none)]> 
+
+This is the page that already existed on the screen before doing that… Notice how the connection here is 9 
+then later connection becomes 10
+
+
+Last login: Tue Oct 17 14:48:34 on ttys000
+/Applications/XAMPP/xamppfiles/bin/mysql ; exit;
+vishvesh@Macbook-Air-2 ~ % /Applications/XAMPP/xamppfiles/bin/mysql ; exit;
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 10
+Server version: 10.4.21-MariaDB Source distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
++--------------------+
+1 row in set (0.004 sec)
+
+MariaDB [(none)]> 
+
+So the above is what I received when I open mysql from going through folders instead of directly using the commands
+
+What when I create one more new file?? Well here it is connection changed from 10 to 11. 
+Don’t know much about what this is, but any ways lets get this ball rolling
+
+Last login: Tue Oct 17 14:55:16 on ttys001
+vishvesh@Macbook-Air-2 ~ % /applications/xampp/xamppfiles/bin/mysql -u root -p
+Enter password: 
+Welcome to the MariaDB monitor.  Commands end with ; or \g. 
+Your MariaDB connection id is 11
+Server version: 10.4.21-MariaDB Source distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| CRM                |
+| Paper2             |
+| appoinments_db     |
+| college            |
+| company            |
+| crm_system         |
+| demo               |
+| dj7to9orm          |
+| dj7to9ormn         |
+| information_schema |
+| mysql              |
+| orm2               |
+| paper1             |
+| performance_schema |
+| phpmyadmin         |
+| vishbank           |
++--------------------+
+16 rows in set (0.004 sec)
+
+What is my sql?
+MySQL is a very popular open-source relational database management system (RDBMS).
+MySQL is ideal for both small and large applications
+MySQL is very fast, reliable, scalable, and easy to use
+MySQL is cross-platform
+MySQL is compliant with the ANSI SQL standard
+MySQL was first released in 1995
+MySQL is developed, distributed, and supported by Oracle Corporation
+MySQL is named after co-founder Monty Widenius's daughter: My
+
+
+Who uses MySQL?
+Huge websites like Facebook, Twitter, Airbnb, Booking.com, Uber, GitHub, YouTube, etc.
+Content Management Systems like WordPress, Drupal, Joomla!, Contao, etc.
+A very large number of web developers around the world
+
+What do you need to build a website that shows data from a data base?
+An RDBMS database program (like MySQL)
+A server-side scripting language, like PHP
+To use SQL to get the data you want
+To use HTML / CSS to style the page
+
+What is RDBMS?
+RDBMS stands for Relational Database Management System.
+RDBMS is a program used to maintain a relational database.
+RDBMS is the basis for all modern database systems such as MySQL, Microsoft SQL Server, Oracle, and Microsoft Access.
+RDBMS uses MySQL to access the data in the database.
+
+What is a database table?
+A table consists of columns and rows
+Column stands for field
+And record stands for row
+
+Example customer table: 
+
+CustomerID	CustomerName 	ContactName	Address	City	Postal Code	Country
+1	Alfreds Futterkiste	Maria Anders	Obere Str. 57	Berlin	12209	Germany
+2	Ana Trujillo Emparedados y helados	Ana Trujillo	Avda. de la Constitución 2222	México D.F.	05021	Mexico
+3	Antonio Moreno Taquería	Antonio Moreno	Mataderos 2312	México D.F.	05023	Mexico
+4	Around the Horn	Thomas Hardy	120 Hanover Sq.	London	WA1 1DP	UK
+5	Berglunds snabbköp	Christina Berglund	Berguvsvägen 8	Luleå	S-958 22	Sweden
+
+We can say that the table here consists of, 7 Columns and 5 Rows
+
+What is a relational database?
+A relational database defines database relationships in the form of tables. The tables are related to each other - based on data common to each.
+Look at the following three tables "Customers", "Orders", and "Shippers" from the North wind database:
+
+Customer Table
+CustomerID	CustomerName 	ContactName	Address	City	Postal Code	Country
+1	Alfreds Futterkiste	Maria Anders	Obere Str. 57	Berlin	12209	Germany
+2	Ana Trujillo Emparedados y helados	Ana Trujillo	Avda. de la Constitución 2222	México D.F.	05021	Mexico
+3	Antonio Moreno Taquería	Antonio Moreno	Mataderos 2312	México D.F.	05023	Mexico
+4	Around the Horn	Thomas Hardy	120 Hanover Sq.	London	WA1 1DP	UK
+5	Berglunds snabbköp	Christina Berglund	Berguvsvägen 8	Luleå	S-958 22	Sweden
+
+Order Table: The relationship between the "Customers" table and the "Orders" table is the CustomerID column:
+OrderID	CustomerID	EmployeeID	OrderDate	ShipperID
+10278	5	8	1996-08-12	2
+10280	5	2	1996-08-14	1
+10308	2	7	1996-09-18	3
+10355	4	6	1996-11-15	1
+10365	3	3	1996-11-27	2
+10383	4	8	1996-12-16	3
+10384	5	3	1996-12-16	3
+
+Shippers Table: The relationship between the "Orders" table and the "Shippers" table is the ShipperID column:
+ShipperID	ShipperName	Phone
+1	Speedy Express	(503) 555-9831
+2	United Package	(503) 555-3199
+3	Federal Shipping	(503) 555-9931
+
+What is SQL?
+SQL is the standard language for dealing with Relational Databases.(C
+SQL is used to insert, search, update, and delete database records.
+
+How to use SQL?
+
+#1.
+Checking the no of  the database:
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| CRM                |
+| Paper2             |
+| appoinments_db     |
+| college            |
+| company            |
+| crm_system         |
+| demo               |
+| dj7to9orm          |
+| dj7to9ormn         |
+| information_schema |
+| mysql              |
+| orm2               |
+| paper1             |
+| performance_schema |
+| phpmyadmin         |
+| vishbank           |
++--------------------+
+16 rows in set (0.004 sec)
+
+#2.
+Creating a database :
+MariaDB [(none)]> create database business;
+Query OK, 1 row affected (0.020 sec)
+
+#3.
+Using the database :
+MariaDB [(none)]> use business;
+Database changed
+
+#4.
+Creating a table in the database:
+MariaDB [business]> create table CustomerTable (CustomerID int, CustomerName varchar(30), ContactName varchar(30), address varchar(30), city varchar(30), PostalCode varchar(30), Country varchar(30));
+Query OK, 0 rows affected (0.047 sec)
+
+#5.
+Checking the created table:
+MariaDB [business]> desc customertable;
+
++--------------+-------------+------+-----+---------+-------+
+| Field        | Type        | Null | Key | Default | Extra |
++--------------+-------------+------+-----+---------+-------+
+| CustomerID   | int(11)     | YES  |     | NULL    |       |
+| CustomerName | varchar(30) | YES  |     | NULL    |       |
+| ContactName  | varchar(30) | YES  |     | NULL    |       |
+| address      | varchar(30) | YES  |     | NULL    |       |
+| city         | varchar(30) | YES  |     | NULL    |       |
+| PostalCode   | varchar(30) | YES  |     | NULL    |       |
+| Country      | varchar(30) | YES  |     | NULL    |       |
++--------------+-------------+------+-----+---------+-------+
+
+7 rows in set (0.017 sec)
+
+#6
+Inserting values in a single column in  CustomerTable:
+
+MariaDB [business]> insert into CustomerTable (CustomerID) Values (1),(2),(3),(4),(5);
+Query OK, 5 rows affected (0.009 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+MariaDB [business]> select * from customertable;
++------------+--------------+-------------+---------+------+------------+---------+
+| CustomerID | CustomerName | ContactName | address | city | PostalCode | Country |
++------------+--------------+-------------+---------+------+------------+---------+
+|          1 | NULL         | NULL        | NULL    | NULL | NULL       | NULL    |
+|          2 | NULL         | NULL        | NULL    | NULL | NULL       | NULL    |
+|          3 | NULL         | NULL        | NULL    | NULL | NULL       | NULL    |
+|          4 | NULL         | NULL        | NULL    | NULL | NULL       | NULL    |
+|          5 | NULL         | NULL        | NULL    | NULL | NULL       | NULL    |
++------------+--------------+-------------+---------+------+------------+---------+
+6 rows in set (0.001 sec)
+
+#7
+MariaDB [business]> update customertable set customerName='Aloo',contactname='bhujyaa',address='ladooniwas',city='dholakpur',postalcode='10001',country='TunTunPur' where customerid=1;
+Query OK, 1 row affected (0.039 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [business]> select * from customertable;
++------------+--------------+-------------+------------+-----------+------------+----------+
+| CustomerID | CustomerName | ContactName | address    | city      | PostalCode | Country  |
++------------+--------------+-------------+------------+-----------+------------+----------+
+|          1 | Aloo         | bhujyaa     | ladoniwas  | dholakpur | 10001      | TunTunPur|
+|          2 | NULL         | NULL        | NULL       | NULL      | NULL       | NULL     |
+|          3 | NULL         | NULL        | NULL       | NULL      | NULL       | NULL     |
+|          4 | NULL         | NULL        | NULL       | NULL      | NULL       | NULL     |
+|          5 | NULL         | NULL        | NULL       | NULL      | NULL       | NULL     |
++------------+--------------+-------------+------------+-----------+------------+----------+
+5 rows in set (0.001 sec)
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
